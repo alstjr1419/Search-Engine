@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+
+    <ul class="first">
+            <li class="foo"> list item 1 </li>
+            <li> list item 2 </li>
+            <li class="bar"> list item 3 </li>
+        </ul>
+        <ul class="second">
+            <li class="foo"> list item 1 </li>
+            <li> list item 2 </li>
+            <li class="bar"> list item 3 </li>
+        </ul>
+  </body>
+  <script type="text/javascript">
+    (function($){
+      //chain & traversing
+      $('#tutorial').attr('href', 'http://jquery.org').attr('target','_unlock').css('color','orange');
+      $('ul').find('.foo').css('background-color','red').end().find('.bar').css('color','orange');
+    })(jQuery);
+  </script>
+</html>

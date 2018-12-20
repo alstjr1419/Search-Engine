@@ -1,0 +1,24 @@
+header{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.searchAndScope{
+  display: flex;
+}
+.searchAndScope >p, a{
+  margin: 0px 10px;
+  text-decoration: none;
+  color: white;
+}
+.searchAndScope > form{
+  display: flex;
+  margin-right: 15px;
+}
+
+.resultBox{
+  width: 100%;
+  height: 95%;
+  background-color: white;
+}

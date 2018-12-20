@@ -1,0 +1,68 @@
+
+.searchBox{
+  /* flex- center */
+  background: rgb(12, 116, 175);
+  height: 40px;
+  /* 경계선 굴곡 주기 */
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+ /* .searchBox:hover > .searchTxt{
+  width: 240px;
+  padding: 0 6px;
+} */
+.searchBox:hover > .searchBtn{
+  background: white;
+}
+.searchBtn{
+  color:rgb(28, 78, 175);
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(128, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.searchTxt{
+  /* 형태 없음 */
+  border:none;
+  background: none;
+  /* 외곽선 없음 */
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  /* 0.4초 조건  */
+  transition: 0.4s;
+  line-height: 40px;
+  width: 240px;
+  /* width:240px; */
+  padding-left: 10px
+}
+.searchSite{
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.searchSite > img{
+  width: 35px;
+  border-radius: 50%;
+}
+.searchSite:hover{
+
+}
+
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;
+}

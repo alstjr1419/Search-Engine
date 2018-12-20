@@ -1,0 +1,44 @@
+.adBox1{
+  background-color: white;
+  height: 100%;
+  width: 20%;
+}
+.mainBox{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adBox2{
+  background-color: white;
+  height: 100%;
+  width: 20%;
+}
+
+.loginForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.loginForm > input{
+  margin: 5px 0px;
+}
+.loginForm > p {
+  margin: 5px 0px;
+}
+
+
+
+.newsBox{
+  margin-bottom: 10px;
+}
+.communityBox{
+  margin-bottom: 10px;
+}
+.educationBox{
+  margin-bottom: 10px;
+}
