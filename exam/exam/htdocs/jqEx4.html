@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+    <ul class="first">
+    <li class="foo"> list item 1 </li>
+    <li> list item 2 </li>
+    <li class="bar"> list item 3 </li>
+</ul>
+<ul class="second">
+    <li class="foo"> list item 1 </li>
+    <li> list item 2 </li>
+    <li class="bar"> list item 3 </li>
+</ul>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').css('color', 'red');
+        </script>
+        <script type="text/javascript">$('ul.first').find('.foo').css('background-color', 'red').end().find('.bar').css('background-color', 'green');</script>
+  </body>
+</html>

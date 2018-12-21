@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - Welcome</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var articleTextChange = function(text){
+      var article = document.querySelector('article').innerHTML = text;
+    }
+  </script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <ol>
+    <li><a onclick="
+      fetch('html').then(function(response){
+        response.text().then(function(text){
+          articleTextChange(text);
+        })
+      })
+      ">HTML</a></li>
+    <li><a onclick="
+      fetch('css').then(function(response){
+        response.text().then(function(text){
+          articleTextChange(text);
+        })
+      })
+      ">CSS</a></li>
+    <li><a onclick="
+      fetch('JavaScript').then(function(response){
+        response.text().then(function(text){
+          articleTextChange(text);
+        })
+      })
+      ">JavaScript</a></li>
+  </ol>
+  <article >
+
+  </article>
+
+
+
+
+  <!-- <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web-1-kpqgcl5iez.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+
+</body>
+</html>

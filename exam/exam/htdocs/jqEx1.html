@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <style type="text/css">
+    #navigation li {
+        list-style:none;
+        float:left;
+        padding:5px;
+    }
+    #navigation {
+        cursor:pointer;
+    }
+    #navigation .selected {
+        background-color:red;
+        color:white;
+    }
+</style>
+
+  </head>
+  <body>
+    <ul id="navigation">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>javascript</li>
+      <li>jQuery</li>
+      <li>PHP</li>
+      <li>mysql</li>
+    </ul>
+
+  </body>
+  <script type="text/javascript">
+
+    (function($){
+      $('#navigation li').on('click', function() {
+          $('#navigation li').removeClass('selected');
+          $(this).addClass('selected');
+      })
+    })(jQuery)
+  </script>
+</html>
