@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bind, unbind, trigger를 이용한 이벤트의 설치, 제거, 호출</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <input id="click_me" type="button" name="" value="click me">
+    <input id="remove_event" type="button" name="" value="unbind">
+    <input id="trigger_event" type="button" name="" value="trigger">
+  </body>
+  <script type="text/javascript">
+  // clickHandler 함수 설정
+    function clickHandler(e) {
+      alert('thank you');
+    }
+    // jQuery 시작
+    (function ($) {
+      // html이 로드되었을떄 함수 실행
+      $(document).ready(function(){
+        // #click_me를 click하였을때 clickHandler함수 실행
+        $('#click_me').on('click', clickHandler);
+        // #remove_event를 click하였을때 함수 설정
+        $('#remove_event').on('click', function(e){
+          // #click_me를 click하였을떄의 clickHandler함수 헤제
+          $('#click_me').off('click', clickHandler);
+        });
+        // #trigger_event를 click하였을때의 함수 설정
+        $('#trigger_event').on('click', function(e){
+          // #click_me의 click이벤트를 강제 실행
+          $('#click_me').trigger('click');
+        })
+      })
+    })(jQuery)
+  </script>
+</html>
