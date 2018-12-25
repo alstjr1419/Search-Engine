@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    p{
+      background:yellow;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <body>
+    append
+    <p id="1">
+      i would like to say:
+    </p>
+    after
+    <p id="2">
+      i would like to say:
+    </p>
+
+
+  </body>
+  <script type="text/javascript">
+  //해당 객체에 내장 $().append
+    (function ($) {
+      $('#1').append("<strong>Hello</strong>");
+
+  //해당 객체의 html문 삽입 이후에 내장
+      $('#2').after("<b>Hello</b>");
+
+    })(jQuery)
+
+
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    p{
+      color:blue;
+      margin: 8px;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <body>
+    <input type="text" value="초기 값">
+    <p>
+    </p>
+  </body>
+  <script type="text/javascript">
+
+    (function ($) {
+      //input 에 키를 누를때마다 이벤트 설정
+      $("input").keyup(function () {
+        //input 안에 값을 var value에 담는다.
+        var value = $(this).val();
+        //p form 태그안에 그값을 담는다.
+        $("p").text(value);
+        //html안에 value초기값이 심어질때 바로 작동을 하기 때문에
+        //초기값또한 처음에 입력이 된다.
+      }).keyup()
+    })(jQuery)
+
+  </script>
+</html>

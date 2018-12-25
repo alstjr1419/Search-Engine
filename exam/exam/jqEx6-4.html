@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    p{
+      background: yellow;
+      margin: 6px 0;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <body>
+    <p>
+      hellow
+    </p>
+    how are
+    <p>
+      you
+    </p>
+    <button>
+      Call remove() on paragraphs
+    </button>
+
+  </body>
+  <script type="text/javascript">
+
+    (function ($) {
+      $("button").click(function(){
+        $("p").remove();
+      })
+    })(jQuery)
+
+
+  </script>
+</html>
