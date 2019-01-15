@@ -2,17 +2,19 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Search engine</title>
+    <!--css link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/hoverSearch.css">
     <link rel="stylesheet" href="css/section.css">
-    <script type="text/javascript" src="js/master.js">
-    </script>
+    <!--script and jQuery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
   </head>
   <body>
     <header>
-      <h1>G-Generation</h1>
+      <h1>Search Engine</h1>
     </header>
 
     <section>
@@ -22,16 +24,24 @@
 test
       <div class="mainBox">
         <div class="searchBox" id='searchBox'   >
-          <select class="" name="">
-            <option value="">구글</option>
-            <option value="">네이버</option>
-            <option value="">다음</option>
-            <option value="">줌</option>
-          </select>
-          <input class="searchTxt" id='searchTxt' type="text"  value="검색어를 입력하세요." >
-          <a class="searchBtn" href="#">
-            <i class="fas fa-search"></i>
-          </a>
+            <p id="choiceEngine">
+              <i class="fab fa-google white" value='google'></i>
+              <img class="nonDisplay" src="img/naver.ico"  value='naver'>
+              <img class="nonDisplay" src="img/daum.png"  value='daum'>
+
+
+            </p>
+
+
+
+
+            <input class="searchTxt" id="searchTxt" type="text"  value="검색어를 입력하세요.">
+            <a class="searchBtn" href="searchPage.html">
+              <i class="fas fa-search"></i>
+            </a>
+
+
+
         </div>
 
         <form class="loginForm" action="index.html" method="post">
@@ -63,7 +73,7 @@ test
     </section>
 
     <footer>
-      <h2>한국 it 교육원</h2>
+      <h2>Copyright &copy; JamgMinSeok.ml</h2>
     </footer>
   </body>
 </html>
