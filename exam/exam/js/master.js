@@ -21,20 +21,6 @@ $(document).ready(function(){
   });
 
 // search icon change handler
-// 미구현..
-  function displayAll(){
-    $('.nonDisplay').removeClass('nonDisplay').addClass('white');
-  }
-  function choiceEngine(){
-    $('.white').removeClass('white').addClass('nonDisplay');
-    $(this).addClass('white').removeClass('nonDisplay');
-  }
-  if($('.white').length==1){
-    $('#choiceEngine').find('.white').click(displayAll());
-  }
-  if($('white').length==3){
-    $('#choiceEngine').find('.white').click(choiceEngine());
-  }
-
+  $('')
 
 });
